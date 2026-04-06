@@ -2,7 +2,7 @@
  
 import logging
 
-logging.basicConfig(level = logging.DEBUG)
+logging.basicConfig(level = logging.DEBUG, filename="log.out")
 
 def some_function():
     logging.debug("Mira, llamamos a la funcion.")
