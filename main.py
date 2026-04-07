@@ -12,5 +12,14 @@ file_logger.setLevel(logging.DEBUG)
 console_logger = logging.StreamHandler()
 console_logger.setLevel(logging.INFO)
 
+# Adds formatting
+formatter = logging.Formatter(f'%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_logger.setFormatter(formatter)
+console_logger.setFormatter(formatter)
+
+# Adds handlers to the logger
+logger.addHandler(file_logger)
+logger.addHandler(console_logger)
+
 
 
