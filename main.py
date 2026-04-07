@@ -2,11 +2,15 @@
  
 import logging
 
-logging.basicConfig(level = logging.DEBUG, filename="log.out")
+logger = logging.getLogger("Mylogger")
 
-def some_function():
-    logging.debug("Mira, llamamos a la funcion.")
-    return 123
+# Adds file handler
+file_logger = logging.FileHandler("log.out")
+file_logger.setLevel(logging.DEBUG)
 
-some_function()
+# Adds console handler
+console_logger = logging.StreamHandler()
+console_logger.setLevel(logging.INFO)
+
+
 
