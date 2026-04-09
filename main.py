@@ -3,6 +3,7 @@
 import logging
 
 logger = logging.getLogger("Mylogger")
+logger.setLevel(level=logging.DEBUG)
 
 # Adds file handler
 file_logger = logging.FileHandler("log.out")
@@ -20,6 +21,13 @@ console_logger.setFormatter(formatter)
 # Adds handlers to the logger
 logger.addHandler(file_logger)
 logger.addHandler(console_logger)
+
+
+def myfunc():
+    logger.info("mensaje de informacion")
+    logger.debug("mensaje de debug")
+
+myfunc()
 
 
 
