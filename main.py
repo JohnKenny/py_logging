@@ -1,8 +1,9 @@
- 
+import requests
 from custom_loggers import logger
 
-logger.info("This is an info message")
-logger.debug("This is a debug message")
+
+
+
 
 
 

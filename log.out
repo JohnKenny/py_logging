@@ -23,3 +23,5 @@
 2026-04-10 12:42:36,387 - Mylogger - DEBUG - This is a debug message
 2026-04-10 12:43:20,184 - Mylogger - INFO - This is an info message
 2026-04-10 12:43:20,184 - Mylogger - DEBUG - This is a debug message
+2026-04-10 12:48:52,692 - Mylogger - INFO - This is an info message
+2026-04-10 12:48:52,693 - Mylogger - DEBUG - This is a debug message
