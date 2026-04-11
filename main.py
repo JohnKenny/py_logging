@@ -3,7 +3,8 @@ import time
 from logging.handlers import RotatingFileHandler
 
 handler = RotatingFileHandler(filename="log.out", 
-                              maxBytes=2048, 
+                              maxBytes=2048,
+                              delay= True, 
                               backupCount=4)
 
 logger = logging.getLogger("MyLogger")
